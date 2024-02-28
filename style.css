@@ -48,6 +48,8 @@ body {
 }
 
 .input-films {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,6 +75,31 @@ body {
 
     opacity: .7;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.49);
+}
+
+ul {
+    position: absolute;
+    display: none;
+    top: 170px;
+
+    width: 50%;
+    background-color: #efefef;
+}
+
+ul li {
+    padding: 20px 5px;
+    list-style: none;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: antiquewhite;
+}
+
+ul li a {
+    color: #000;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 .input-area {
