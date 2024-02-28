@@ -14,6 +14,7 @@
 
     <!--LINK CSS BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--LINK JS-->
     <script src="script.js" defer></script>
@@ -60,28 +61,88 @@
                 <div class="input-films">
                     <p 
                         class="input-title"
-                        >
+                    >
                         Studio Ghibli
                     </p>
-                    <input
-                        type="text"
-                        name="films"
-                        id="films"
-                        placeholder="Pesquise seu filme favorito aqui..."
-                    >
+                    <div class="input-area">
+                        <input
+                            type="text"
+                            name="films"
+                            id="films"
+                            placeholder="Pesquise seu filme favorito aqui..."
+                        >
+                        <i 
+                            class="bi bi-search"
+                            id="button"
+                        ></i>
+                    </div>
                 </div>
             </div>
 
             <div 
-                class="handle-film hidden"
+                class="film-container hidden"
+                id="hidden"
             >
-                
+                <div
+                    class="handle-film"
+                >
+                    <div
+                        class="film-img"
+                    >
+                        <img
+                            class="film-banner"
+                            src=""
+                            alt="Cartaz do filme"
+                        >
+                    </div>
+                    <div
+                        class="film-content"
+                    >
+                        <h2
+                            class="film-title"
+                        >
+                            
+                        </h2>
+                        <p
+                            class="film-description"
+                        >
+                            
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="film-staff"
+                >
+                    <p>
+                        <strong>Título Original:</strong> <span class="film-original-title"></span>
+                    </p>
+                    <p>
+                        <strong>Diretor:</strong> <span class="film-director"></span>
+                    </p>
+                    <p>
+                        <strong>Produtor:</strong> <span class="film-producer"></span>
+                    </p>
+                    <p>
+                        <strong>Data de lançamento:</strong> <span class="film-release"></span>
+                    </p>
+                    <p>
+                        <strong>Tempo de filme:</strong> <span class="film-time"></span>
+                    </p>
+                </div>
             </div>
-
             
 
 
         </main>
+
+        <footer>
+            <div 
+                class="bg-footer hidden"
+                id="hidden-footer"
+            >
+                <p>Created by Caio Azevedo</p>
+            </div>
+        </footer>
 
 
 
