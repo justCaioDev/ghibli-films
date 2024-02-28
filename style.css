@@ -10,12 +10,17 @@ body {
     font-family: "Montserrat";
 }
 
+/* .hidden {
+    height: 0;
+} */
+
 .header-container {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 30px 0;
+    padding: 20px 0;
+    background-color: #fff;
 }
 
 .header-logo {
@@ -34,8 +39,45 @@ body {
     height: 100%;
 
 
-    background-image: linear-gradient(to top, #00000098, #000000de), url(assets/bg.jpg);
+    background-image: linear-gradient(to top, #0000009d, #000000a2), url(assets/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
+
+.input-films {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-title {
+    font-size: 4rem;
+    font-family: "Bebas Neue";
+    color: #fff;
+    opacity: .8;
+}
+
+#films {
+    width: 55%;
+    height: 55px;
+
+    margin: 0 auto 50px;
+    border-radius: 10px;
+    border: none;
+
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    opacity: .7;
+}
+
+input:focus {
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
