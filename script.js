@@ -159,6 +159,16 @@ function filterFilms () {
             ul.style.display = "block"
         }
 
+        input.addEventListener("keyup", (e) => {
+            if (e.code === "Enter") {
+                ul.style.display = "none"
+            }
+        })
+        
+        btnInput.addEventListener("click", () => {
+            ul.style.display = "none"
+        });
+
     }
     console.log(li)
 }
@@ -168,7 +178,6 @@ function filterFilms () {
 input.addEventListener("keyup", (e) => {
     if (e.code === "Enter") {
         const film = input.value;
-        
         dataAPI(film);
     };
 });

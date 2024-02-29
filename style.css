@@ -6,7 +6,7 @@
 
 body {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     font-family: "Montserrat";
 }
 
@@ -143,7 +143,7 @@ input:focus {
 }
 
 .film-container {
-    max-width: 80%;
+    width: 80%;
     margin: 100px auto;
     padding: 40px 25px;
 
@@ -194,4 +194,120 @@ input:focus {
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .header-logo {
+        width: 80px;
+    }
+
+    .carousel-container {
+        width: 80%;
+    }
+
+    .input-title {
+        font-size: 2.3rem;
+    }
+
+    .input-area {
+        gap: 2px;
+    }
+
+    #films {
+        width: 70%;
+        height: 35px;
+
+        font-size: .7rem;
+    }
+
+    .bi {
+        width: 35px;
+        height: 35px;
+    }
+
+    .bi-search {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .handle-film {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 30px auto 10px;
+    }
+    .handle-film img {
+        width: 85%;
+        margin: auto;
+    }
+
+    .film-container {
+        width: 95%;
+        margin: 100px auto;
+        padding: 0 10px;
+    }
+
+    .film-content {
+        width: 90%;
+
+        margin: 20px auto;
+    }
+
+    .film-title {
+        font-size: 2rem;
+    }
+
+    .film-content .film-description {
+        margin: 0;
+        font-size: .7rem;
+        text-align: justify;
+    }
+
+    .film-staff {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        font-size: .7rem;
+    }
+
+    footer {
+        margin: 100px auto;
+    }
+
+    .bg-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: 30px;
+    }
+
+    footer p {
+        font-size: .7rem;
+        margin: 0 auto;
+    }
+
+    ul {
+        top: 110px;
+        width: 60%;
+    }
+
+    ul li a {
+        font-size: .9rem;
+    }
+
+    .carousel-container {
+        margin: auto;
+    }
+
+    .film-img {
+        display: flex;
+    }
+
+    .sr-only {
+        font-size: .6rem;
+        font-weight: bolder;
+    }
 }
