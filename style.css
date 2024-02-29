@@ -14,6 +14,14 @@ body {
     display: none;
 }
 
+.show-mobile {
+    display: none;
+}
+
+.show-desktop {
+    display: block;
+}
+
 .header-container {
     display: flex;
     justify-content: center;
@@ -309,5 +317,32 @@ input:focus {
     .sr-only {
         font-size: .6rem;
         font-weight: bolder;
+    }
+
+    .show-desktop {
+        display: none;
+    }
+
+    .show-mobile {
+        display: block;
+    }
+
+    .carousel {
+        width: 90%;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+    .carousel-item img {
+        height: 310px;
+    }
+
+    .bg-body {
+        height: 100vh;
+        background-image: linear-gradient(to top, #0000009d, #000000a2), url(assets/bg-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
     }
 }
