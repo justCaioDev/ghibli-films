@@ -216,7 +216,6 @@ function filterFilms () {
         }
 
     }
-    console.log(li)
 }
 
 //----------- Eventos de click ----------------
@@ -236,8 +235,6 @@ btnInput.addEventListener("click", () => {
 input.addEventListener("keyup", () => {
     filterFilms()
 })
-
-
 
 inputFilter()
 
