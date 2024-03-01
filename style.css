@@ -131,7 +131,7 @@ ul li a {
 
 .bi {
     display: block;
-    
+
     width: 55px;
     height: 55px;
     
@@ -155,6 +155,9 @@ ul li a {
 }
 
 .input-area a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: #000;
 
