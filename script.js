@@ -106,6 +106,37 @@ async function dataAPI () {
     });
 };
 
+async function dataRow () {
+    const res = await fetch(ghibliAPIUrl);
+    const data = await res.json();
+
+    data.filter((film) => {
+        const filmRow = document.querySelector(".films-row")
+        const filmCard = document.createElement("div");
+        const filmCardImage = document.createElement("img");
+        const filmCardTitle = document.createElement("h3");
+
+        filmCard.classList.add("film-card");
+        filmCardImage.classList.add("film-card-img");
+        filmCardTitle.classList.add("film-card-title");
+
+        filmCardImage.setAttribute("src", film.image);
+        filmCardTitle.innerText = film.title;
+
+        filmCard.appendChild(filmCardImage);
+        filmCard.appendChild(filmCardTitle);
+
+        filmRow.appendChild(filmCard);
+
+        filmCard.addEventListener("click", () => {
+            const filmTitleRow = filmCardTitle.innerText
+            input.value = filmTitleRow
+            dataAPI()
+    })
+    })
+
+}
+
 function inputFilter () {
     const ul = document.querySelector(".filter-input")
     titles.forEach((films) => {
@@ -173,7 +204,6 @@ function filterFilms () {
     console.log(li)
 }
 
-
 //----------- Eventos de click ----------------
 input.addEventListener("keyup", (e) => {
     if (e.code === "Enter") {
@@ -193,4 +223,7 @@ input.addEventListener("keyup", () => {
 })
 
 
+
 inputFilter()
+
+dataRow()

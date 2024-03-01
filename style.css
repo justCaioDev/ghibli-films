@@ -204,6 +204,56 @@ input:focus {
     padding: 20px;
 }
 
+.films-row {
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    grid-column-gap: 20px;
+    align-items: center;
+    
+    overflow-x: scroll;
+    width: 70%;
+    height: 450px;
+    margin: 20px auto 80px;
+}
+
+.film-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    width: 250px;
+    height: 400px;
+
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.film-card img {
+    width: 100%;
+
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.film-card h3 {
+    font-size: 1rem;
+    padding: 5px auto;
+}
+
+::-webkit-scrollbar {
+    background-color: #efefef;
+    height: 20px;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3a3e42;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 600px) {
     .header-logo {
         width: 80px;
