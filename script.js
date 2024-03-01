@@ -120,20 +120,24 @@ async function dataRow () {
     data.filter((film) => {
         const filmRow = document.querySelector(".films-row")
         const filmCard = document.createElement("div");
+        const filmLink = document.createElement("a")
         const filmCardImage = document.createElement("img");
         const filmCardTitle = document.createElement("h3");
 
         filmCard.classList.add("film-card");
         filmCardImage.classList.add("film-card-img");
         filmCardTitle.classList.add("film-card-title");
+        filmLink.classList.add("film-card-link");
 
         filmCardImage.setAttribute("src", film.image);
         filmCardTitle.innerText = film.title;
+        filmLink.setAttribute("href", "#hidden");
 
+        filmLink.appendChild(filmCard)
         filmCard.appendChild(filmCardImage);
         filmCard.appendChild(filmCardTitle);
 
-        filmRow.appendChild(filmCard);
+        filmRow.appendChild(filmLink);
 
         filmCard.addEventListener("click", () => {
             const filmTitleRow = filmCardTitle.innerText
