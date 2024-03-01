@@ -207,6 +207,10 @@ function filterFilms () {
             ul.style.display = "none"
         });
 
+        if (input.value === "") {
+            ul.style.display = "none"
+        }
+
     }
     console.log(li)
 }
