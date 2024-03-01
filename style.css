@@ -381,13 +381,13 @@ input:focus {
     }
 
     .carousel {
-        width: 90%;
+        width: 95%;
         margin: auto;
         padding: 20px 0;
     }
 
     .carousel-item img {
-        height: 310px;
+        height: 300px;
     }
 
     .bg-body {
