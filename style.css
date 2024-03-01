@@ -249,7 +249,7 @@ input:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #3a3e42;
+    background-color: #2b91f8;
     border-radius: 5px;
 }
 
@@ -393,5 +393,9 @@ input:focus {
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
+    }
+
+    .films-row {
+        width: 95%;
     }
 }
