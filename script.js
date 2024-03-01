@@ -82,6 +82,7 @@ const filmRelease = document.querySelector(".film-release");
 const filmTime = document.querySelector(".film-time");
 const hidden = document.querySelector("#hidden");
 const hiddenFooter = document.querySelector("#hidden-footer");
+const filmContainer = document.querySelector(".film-container");
 
 //--------- Requisição dos dados da API --------------------
 async function dataAPI () {
@@ -99,10 +100,16 @@ async function dataAPI () {
             filmOriginalTitle.innerText = film.original_title;
             filmRelease.innerText = film.release_date;
             filmTime.innerText = `${film.running_time} min`;
-        };
+            filmContainer.style.background = `linear-gradient(#000000a5, #000000d1), url(${film.movie_banner}) center center no-repeat`
+            filmContainer.style.backgroundSize = "cover"
 
-        hidden.classList.remove("hidden");
-        hiddenFooter.classList.remove("hidden");
+            hidden.classList.remove("hidden");
+            hiddenFooter.classList.remove("hidden");
+        }else {
+
+        }
+
+        
     });
 };
 

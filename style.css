@@ -154,12 +154,11 @@ input:focus {
     width: 80%;
     margin: 100px auto;
     padding: 40px 25px;
-
-    background-color: #000;
+    
     color: #fff;
     border-radius: 10px;
     border: 5px solid black;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.422);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.9);
 }
 
 .handle-film {
